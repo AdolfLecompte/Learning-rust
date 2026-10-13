@@ -1,88 +1,12 @@
-   0.007145508s  INFO prepare_target{force=false package_id=variables v0.1.0 (/home/adolf/Projects/Learning-rust/variables) target="variables"}: cargo::core::compiler::fingerprint: fingerprint error for variables v0.1.0 (/home/adolf/Projects/Learning-rust/variables)/Check { test: false }/TargetInner { name: "variables", doc: true, ..: with_path("/home/adolf/Projects/Learning-rust/variables/src/main.rs", Edition2024) }
-   0.007159373s  INFO prepare_target{force=false package_id=variables v0.1.0 (/home/adolf/Projects/Learning-rust/variables) target="variables"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/adolf/Projects/Learning-rust/variables/target/debug/.fingerprint/variables-befc6535abdf655f/bin-variables`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: cargo_util::paths::read_bytes
-   1: cargo_util::paths::read
-   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
-   3: cargo::core::compiler::fingerprint::prepare_target
-   4: cargo::core::compiler::compile
-   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   6: cargo::ops::cargo_compile::compile_with_exec
-   7: cargo::ops::cargo_compile::compile
-   8: cargo::commands::check::exec
-   9: <cargo::cli::Exec>::exec
-  10: cargo::main
-  11: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  12: std::rt::lang_start::<()>::{closure#0}
-  13: <&dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync as core::ops::function::FnOnce<()>>::call_once
-             at /rustc/48a229ceaefd4985c50990b14116b6d856af0985/library/core/src/ops/function.rs:287:21
-  14: std::panicking::catch_unwind::do_call::<&dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync, i32>
-             at /rustc/48a229ceaefd4985c50990b14116b6d856af0985/library/std/src/panicking.rs:576:43
-  15: std::panicking::catch_unwind::<i32, &dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync>
-             at /rustc/48a229ceaefd4985c50990b14116b6d856af0985/library/std/src/panicking.rs:544:19
-  16: std::panic::catch_unwind::<&dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync, i32>
-             at /rustc/48a229ceaefd4985c50990b14116b6d856af0985/library/std/src/panic.rs:359:14
-  17: std::rt::lang_start_internal::{closure#0}
-             at /rustc/48a229ceaefd4985c50990b14116b6d856af0985/library/std/src/rt.rs:175:24
-  18: std::panicking::catch_unwind::do_call::<std::rt::lang_start_internal::{closure#0}, isize>
-             at /rustc/48a229ceaefd4985c50990b14116b6d856af0985/library/std/src/panicking.rs:576:43
-  19: std::panicking::catch_unwind::<isize, std::rt::lang_start_internal::{closure#0}>
-             at /rustc/48a229ceaefd4985c50990b14116b6d856af0985/library/std/src/panicking.rs:544:19
-  20: std::panic::catch_unwind::<std::rt::lang_start_internal::{closure#0}, isize>
-             at /rustc/48a229ceaefd4985c50990b14116b6d856af0985/library/std/src/panic.rs:359:14
-  21: std::rt::lang_start_internal
-             at /rustc/48a229ceaefd4985c50990b14116b6d856af0985/library/std/src/rt.rs:171:5
-  22: main
-  23: <unknown>
-  24: __libc_start_main
-  25: <unknown>
-   0.024833936s  INFO prepare_target{force=false package_id=variables v0.1.0 (/home/adolf/Projects/Learning-rust/variables) target="variables"}: cargo::core::compiler::fingerprint: fingerprint error for variables v0.1.0 (/home/adolf/Projects/Learning-rust/variables)/Check { test: true }/TargetInner { name: "variables", doc: true, ..: with_path("/home/adolf/Projects/Learning-rust/variables/src/main.rs", Edition2024) }
-   0.024846284s  INFO prepare_target{force=false package_id=variables v0.1.0 (/home/adolf/Projects/Learning-rust/variables) target="variables"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/adolf/Projects/Learning-rust/variables/target/debug/.fingerprint/variables-e3bac8940a9af7c6/test-bin-variables`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: cargo_util::paths::read_bytes
-   1: cargo_util::paths::read
-   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
-   3: cargo::core::compiler::fingerprint::prepare_target
-   4: cargo::core::compiler::compile
-   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   6: cargo::ops::cargo_compile::compile_with_exec
-   7: cargo::ops::cargo_compile::compile
-   8: cargo::commands::check::exec
-   9: <cargo::cli::Exec>::exec
-  10: cargo::main
-  11: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  12: std::rt::lang_start::<()>::{closure#0}
-  13: <&dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync as core::ops::function::FnOnce<()>>::call_once
-             at /rustc/48a229ceaefd4985c50990b14116b6d856af0985/library/core/src/ops/function.rs:287:21
-  14: std::panicking::catch_unwind::do_call::<&dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync, i32>
-             at /rustc/48a229ceaefd4985c50990b14116b6d856af0985/library/std/src/panicking.rs:576:43
-  15: std::panicking::catch_unwind::<i32, &dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync>
-             at /rustc/48a229ceaefd4985c50990b14116b6d856af0985/library/std/src/panicking.rs:544:19
-  16: std::panic::catch_unwind::<&dyn core::ops::function::Fn<(), Output = i32> + core::panic::unwind_safe::RefUnwindSafe + core::marker::Sync, i32>
-             at /rustc/48a229ceaefd4985c50990b14116b6d856af0985/library/std/src/panic.rs:359:14
-  17: std::rt::lang_start_internal::{closure#0}
-             at /rustc/48a229ceaefd4985c50990b14116b6d856af0985/library/std/src/rt.rs:175:24
-  18: std::panicking::catch_unwind::do_call::<std::rt::lang_start_internal::{closure#0}, isize>
-             at /rustc/48a229ceaefd4985c50990b14116b6d856af0985/library/std/src/panicking.rs:576:43
-  19: std::panicking::catch_unwind::<isize, std::rt::lang_start_internal::{closure#0}>
-             at /rustc/48a229ceaefd4985c50990b14116b6d856af0985/library/std/src/panicking.rs:544:19
-  20: std::panic::catch_unwind::<std::rt::lang_start_internal::{closure#0}, isize>
-             at /rustc/48a229ceaefd4985c50990b14116b6d856af0985/library/std/src/panic.rs:359:14
-  21: std::rt::lang_start_internal
-             at /rustc/48a229ceaefd4985c50990b14116b6d856af0985/library/std/src/rt.rs:171:5
-  22: main
-  23: <unknown>
-  24: __libc_start_main
-  25: <unknown>
+   0.007495099s  INFO prepare_target{force=false package_id=variables v0.1.0 (/home/adolf/Projects/Learning-rust/variables) target="variables"}: cargo::core::compiler::fingerprint: stale: changed "/home/adolf/Projects/Learning-rust/variables/src/main.rs"
+   0.007517632s  INFO prepare_target{force=false package_id=variables v0.1.0 (/home/adolf/Projects/Learning-rust/variables) target="variables"}: cargo::core::compiler::fingerprint:           (vs) "/home/adolf/Projects/Learning-rust/variables/target/debug/.fingerprint/variables-befc6535abdf655f/dep-bin-variables"
+   0.007520152s  INFO prepare_target{force=false package_id=variables v0.1.0 (/home/adolf/Projects/Learning-rust/variables) target="variables"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1791864132, nanos: 124326221 } < FileTime { seconds: 1791864142, nanos: 394239611 }
+   0.007632884s  INFO prepare_target{force=false package_id=variables v0.1.0 (/home/adolf/Projects/Learning-rust/variables) target="variables"}: cargo::core::compiler::fingerprint: fingerprint dirty for variables v0.1.0 (/home/adolf/Projects/Learning-rust/variables)/Check { test: false }/TargetInner { name: "variables", doc: true, ..: with_path("/home/adolf/Projects/Learning-rust/variables/src/main.rs", Edition2024) }
+   0.007646989s  INFO prepare_target{force=false package_id=variables v0.1.0 (/home/adolf/Projects/Learning-rust/variables) target="variables"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/adolf/Projects/Learning-rust/variables/target/debug/.fingerprint/variables-befc6535abdf655f/dep-bin-variables", reference_mtime: FileTime { seconds: 1791864132, nanos: 124326221 }, stale: "/home/adolf/Projects/Learning-rust/variables/src/main.rs", stale_mtime: FileTime { seconds: 1791864142, nanos: 394239611 } }))
+   0.007890149s  INFO prepare_target{force=false package_id=variables v0.1.0 (/home/adolf/Projects/Learning-rust/variables) target="variables"}: cargo::core::compiler::fingerprint: stale: changed "/home/adolf/Projects/Learning-rust/variables/src/main.rs"
+   0.007895323s  INFO prepare_target{force=false package_id=variables v0.1.0 (/home/adolf/Projects/Learning-rust/variables) target="variables"}: cargo::core::compiler::fingerprint:           (vs) "/home/adolf/Projects/Learning-rust/variables/target/debug/.fingerprint/variables-e3bac8940a9af7c6/dep-test-bin-variables"
+   0.007896776s  INFO prepare_target{force=false package_id=variables v0.1.0 (/home/adolf/Projects/Learning-rust/variables) target="variables"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1791864132, nanos: 124326221 } < FileTime { seconds: 1791864142, nanos: 394239611 }
+   0.007912261s  INFO prepare_target{force=false package_id=variables v0.1.0 (/home/adolf/Projects/Learning-rust/variables) target="variables"}: cargo::core::compiler::fingerprint: fingerprint dirty for variables v0.1.0 (/home/adolf/Projects/Learning-rust/variables)/Check { test: true }/TargetInner { name: "variables", doc: true, ..: with_path("/home/adolf/Projects/Learning-rust/variables/src/main.rs", Edition2024) }
+   0.007917648s  INFO prepare_target{force=false package_id=variables v0.1.0 (/home/adolf/Projects/Learning-rust/variables) target="variables"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/adolf/Projects/Learning-rust/variables/target/debug/.fingerprint/variables-e3bac8940a9af7c6/dep-test-bin-variables", reference_mtime: FileTime { seconds: 1791864132, nanos: 124326221 }, stale: "/home/adolf/Projects/Learning-rust/variables/src/main.rs", stale_mtime: FileTime { seconds: 1791864142, nanos: 394239611 } }))
     Checking variables v0.1.0 (/home/adolf/Projects/Learning-rust/variables)
-error: could not compile `variables` (bin "variables" test) due to 1 previous error
-warning: build failed, waiting for other jobs to finish...
-error: could not compile `variables` (bin "variables") due to 1 previous error
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.05s

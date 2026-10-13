@@ -53,9 +53,9 @@ fn main(){
 
     // characters
     let c = 'z';
-    println!("This is a character -> {z}");
+    println!("This is a character -> {c}");
 
-    let z: char 'ℤ' //explicit
+    let z: char = 'ℤ'; //explicit
     println!("This is a character -> {z}");
 
 }
