@@ -1,3 +1,5 @@
+use std::io;
+
 fn main(){
     // Mutable and immutable
     let x = 5;
@@ -57,5 +59,71 @@ fn main(){
 
     let z: char = 'ℤ'; //explicit
     println!("This is a character -> {z}");
+
+    let heart_eyed_cat = '😻';
+    println!("This is a character -> {heart_eyed_cat}");
+
+    //tuple
+    let tup: (i32, f64, u8) = (500, 6.4 ,1);
+
+    let (x,y,z) = tup;
+    println!("The value of x is -> {x}");
+    println!("The value of y is -> {y}");
+    println!("The value of z is -> {z}");
+
+    let x: (i32, f64, u8) = (500, 6.4, 1);
+
+    let five_hundred = x.0;
+    println!("The first value of the tuple -> {five_hundred}");
+
+    let six_point_four = x.1;
+    println!("The first value of the tuple -> {six_point_four}");
+
+    let one = x.2;
+    println!("The first value of the tuple -> {one}");
+
+    //array
+    let a = [1,2,3,4,5];
+    println!("This is a array -> {a:?}");
+
+    let months = ["January", "February", "March","April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    let six_month = months[5];
+    println!("The six month is -> {six_month}");
+
+    let a: [i32; 5] = [1,2,3,4,5];
+
+    let three = a[2];
+    println!("The third number in the array is -> {three}");
+
+    let ar = [3; 5];
+    println!("ar {ar:?}");
+
+    let a = [1,2,3,4,5];
+
+    let first = a[0];
+    println!("The first number of array is -> {first}");
+    let second = a[1];
+    println!("The second number of array is -> {second}");
+
+    let ar = [1,2,3,4,5];
+    println!("ar {ar:?}");
+
+    println!("Please enter an array index.");
+
+    let mut index = String::new();
+
+    io::stdin()
+        .read_line(&mut index)
+        .expect("Failed to read line");
+
+    let index: usize = index
+        .trim()
+        .parse()
+        .expect("Index entered was not a number");
+
+    let element = a[index];
+
+    println!("The value of the element at the index {index} is -> {element}");
 
 }
